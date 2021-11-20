@@ -85,7 +85,7 @@
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
         <lombok.version>1.16.18</lombok.version>
         <hibernate.validator.version>5.4.2.Final</hibernate.validator.version>
-        <logback.version>1.2.3</logback.version>
+        <logback.version>1.2.7</logback.version>
     </properties>
     <dependencyManagement>
         <dependencies>
