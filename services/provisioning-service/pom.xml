@@ -37,7 +37,7 @@
         <dependency>
             <groupId>de.ahus1.keycloak.dropwizard</groupId>
             <artifactId>keycloak-dropwizard</artifactId>
-            <version>1.1.1</version>
+            <version>1.2.0</version>
         </dependency>
         <dependency>
             <groupId>de.thomaskrille</groupId>
@@ -96,17 +96,15 @@
                             </filters>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.epam.dlab.backendapi.ProvisioningServiceApplication</mainClass>
                                     <manifestEntries>
-                                        <Created-By>&lt;EPAM&gt; Systems</Created-By>
+                                        <Created-By>&lt;EPAM> Systems</Created-By>
                                         <Name>com/epam/dlab</Name>
                                         <Implementation-Title>DLab Provisioning Service</Implementation-Title>
                                         <Implementation-Version>${dlab.version}</Implementation-Version>
-                                        <Implementation-Vendor>&lt;EPAM&gt; Systems</Implementation-Vendor>
+                                        <Implementation-Vendor>&lt;EPAM> Systems</Implementation-Vendor>
                                         <Build-Time>${maven.build.timestamp}</Build-Time>
                                         <Build-OS>${os.name}</Build-OS>
                                         <GIT-Branch>${scmBranch}</GIT-Branch>
