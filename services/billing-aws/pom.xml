@@ -33,7 +33,7 @@
 
     <properties>
         <org.apache.jexl3.version>3.0</org.apache.jexl3.version>
-        <com.amazonaws.version>1.11.48</com.amazonaws.version>
+        <com.amazonaws.version>1.12.210</com.amazonaws.version>
         <org.freemarker.version>2.3.22</org.freemarker.version>
     </properties>
 
@@ -158,7 +158,7 @@
         <dependency>
             <groupId>org.keycloak</groupId>
             <artifactId>keycloak-spring-security-adapter</artifactId>
-            <version>4.8.3.Final</version>
+            <version>17.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
