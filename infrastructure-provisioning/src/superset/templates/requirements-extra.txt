@@ -17,3 +17,4 @@
 gevent==1.4.0
 fab-oidc
 pybigquery
+wtforms>=3.0.0a1 # not directly required, pinned by Snyk to avoid a vulnerability
