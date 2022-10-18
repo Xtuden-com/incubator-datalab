@@ -99,12 +99,12 @@
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-core</artifactId>
-            <version>2.0.1</version>
+            <version>2.2.4</version>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-jaxrs2</artifactId>
-            <version>2.0.1</version>
+            <version>2.2.4</version>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
@@ -216,17 +216,15 @@
                             </filters>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.epam.dlab.backendapi.SelfServiceApplication</mainClass>
                                     <manifestEntries>
-                                        <Created-By>&lt;EPAM&gt; Systems</Created-By>
+                                        <Created-By>&lt;EPAM> Systems</Created-By>
                                         <Name>com/epam/dlab</Name>
                                         <Implementation-Title>DLab Self-Service</Implementation-Title>
                                         <DLab-Version>${dlab.version}</DLab-Version>
-                                        <Implementation-Vendor>&lt;EPAM&gt; Systems</Implementation-Vendor>
+                                        <Implementation-Vendor>&lt;EPAM> Systems</Implementation-Vendor>
                                         <Build-Time>${maven.build.timestamp}</Build-Time>
                                         <Build-OS>${os.name}</Build-OS>
                                         <GIT-Branch>${scmBranch}</GIT-Branch>
