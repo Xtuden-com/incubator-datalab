@@ -99,7 +99,7 @@
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-core</artifactId>
-            <version>2.0.1</version>
+            <version>2.2.11</version>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
@@ -216,10 +216,8 @@
                             </filters>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.epam.dlab.backendapi.SelfServiceApplication</mainClass>
                                     <manifestEntries>
                                         <Created-By>&lt;EPAM&gt; Systems</Created-By>
