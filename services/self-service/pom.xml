@@ -47,7 +47,7 @@
         <dependency>
             <groupId>de.ahus1.keycloak.dropwizard</groupId>
             <artifactId>keycloak-dropwizard</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2</version>
         </dependency>
 
         <dependency>
@@ -216,10 +216,8 @@
                             </filters>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.epam.dlab.backendapi.SelfServiceApplication</mainClass>
                                     <manifestEntries>
                                         <Created-By>&lt;EPAM&gt; Systems</Created-By>
