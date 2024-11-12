@@ -19,7 +19,7 @@
 #
 # ******************************************************************************
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210114
 
 # Install any .deb dependecies
 RUN	apt-get update && \
